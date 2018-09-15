@@ -67,14 +67,14 @@ plot.scatter(dataRow, target, alpha=0.5, s=120)
 plot.xlabel("Attribute Value")
 plot.ylabel("Target Value")
 plot.show()
-dataRow2 = rocksVMines.iloc[1,0:60]
-dataRow3 = rocksVMines.iloc[2,0:60]
-plot.scatter(dataRow2, dataRow3)
+dataCol2 = rocksVMines.iloc[:,1]
+dataCol3 = rocksVMines.iloc[:,2]
+plot.scatter(dataCol2, dataCol3)
 plot.xlabel("2nd Attribute")
 plot.ylabel(("3rd Attribute"))
 plot.show()
-dataRow21 = rocksVMines.iloc[20,0:60]
-plot.scatter(dataRow2, dataRow21)
+dataCol21 = rocksVMines.iloc[:,20]
+plot.scatter(dataCol2, dataCol21)
 plot.xlabel("2nd Attribute")
 plot.ylabel(("21st Attribute"))
 plot.show()
